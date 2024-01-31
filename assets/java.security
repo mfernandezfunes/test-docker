@@ -1,0 +1,3 @@
+# Ensure all java apps use /dev/./urandom (can be overwritten per deploy)
+# More info in https://stackoverflow.com/questions/58991966/what-java-security-egd-option-is-for
+securerandom.source=file:/dev/./urandom

@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+# use default CA certs
+export JAVA_CA_CERTS=/java/cacerts
+if [[ "$ADDITIONAL_CA_CERTS_PATH" ]]; then
+  # copy to an ephemeral directory
+  export JAVA_CA_CERTS=/merged-ca-certs/cacerts
+  mkdir -p $(dirname $JAVA_CA_CERTS)
+  cp -a /java/cacerts $JAVA_CA_CERTS
+  for cert in ${ADDITIONAL_CA_CERTS_PATH}/*; do
+    /java/add-cacert-to-java-keystore.sh $cert $JAVA_CA_CERTS
+  done
+fi
+
+# use a local cacerts trust store with additional CAs added
+OPTS=(-Djavax.net.ssl.trustStore=$JAVA_CA_CERTS)
+
+if [ "$FIPS_ENABLED" = false ]; then
+  exec /usr/bin/java.real ${OPTS[@]} \
+    -Djava.security.properties=/java/java.security \
+    "$@"
+else
+  echo "Running in FIPS mode"
+  exec /usr/bin/java.real ${OPTS[@]} \
+    -classpath /java/bc-fips.jar \
+    -Djava.security.properties=/java/java.fips.security \
+    -Djava.security.policy=/java/java.policy \
+    -Djavax.net.ssl.trustStorePassword=changeit \
+    -Djavax.net.ssl.trustStoreType=JKS \
+    "$@"
+fi

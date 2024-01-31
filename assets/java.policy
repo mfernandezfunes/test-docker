@@ -1,0 +1,6 @@
+// Add in bouncycastle for FIPS-140-2
+
+grant {
+        permission org.bouncycastle.crypto.CryptoServicesPermission "tlsAlgorithmsEnabled";
+        permission java.lang.RuntimePermission "accessClassInPackage.sun.security.internal.spec";
+};
