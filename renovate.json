@@ -1,174 +1,173 @@
 {
     "extends": ["config:recommended"],
-    ,
-  "packageRules": [
-    {
-      "matchDatasources": [
-        "docker"
-      ],
-      "matchPackagePatterns": [
-        "^artifacts.msap.io/mulesoft/core-paas-base-image-node-12.*"
-      ],
-      "replacementName": "artifacts.msap.io/mulesoft/core-paas-base-image-node-16",
-      "replacementVersion": "v4.7.39",
-      "description": "This Base Image has a specified end of life (EOL) date on April 30th, 2022. This image is no longer supported",
-      "commitMessagePrefix": "{{#if isReplacement}}:warning: EOL! |{{else}} {{/if}}",
-      "commitMessageTopic": "{{#if isReplacement}}Upgrade Node 12{{else}} dependency {{depName}}{{/if}}",
-      "commitMessageExtra": "{{#if isReplacement}}to Node 16 | EOL By April 30th, 2022 :warning:{{else}} to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}{{/if}}",
-      "commitMessageSuffix": "",
-      "commitMessageAction": "{{#if isReplacement}} {{else}}Update{{/if}} ",
-      "prBodyNotes": [
-        "{{#if isReplacement}}:warning: :warning: This is an End Of Life PR. This version was deprecated on April 30th, 2022. Kindly merge this PR before that date :warning: :warning:{{else}} {{/if}}"
-      ],
-      "addLabels": [
-        "{{#if isReplacement}}EOL-2022-04-30{{/if}}"
-      ],
-      "prBodyDefinitions": {
-        "Change": "`core-paas-base-image-node-12:{{{displayFrom}}}` to `core-paas-base-image-node-16:{{{displayTo}}}`"
+    "packageRules": [
+      {
+        "matchDatasources": [
+          "docker"
+        ],
+        "matchPackagePatterns": [
+          "^artifacts.msap.io/mulesoft/core-paas-base-image-node-12.*"
+        ],
+        "replacementName": "artifacts.msap.io/mulesoft/core-paas-base-image-node-16",
+        "replacementVersion": "v4.7.39",
+        "description": "This Base Image has a specified end of life (EOL) date on April 30th, 2022. This image is no longer supported",
+        "commitMessagePrefix": "{{#if isReplacement}}:warning: EOL! |{{else}} {{/if}}",
+        "commitMessageTopic": "{{#if isReplacement}}Upgrade Node 12{{else}} dependency {{depName}}{{/if}}",
+        "commitMessageExtra": "{{#if isReplacement}}to Node 16 | EOL By April 30th, 2022 :warning:{{else}} to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}{{/if}}",
+        "commitMessageSuffix": "",
+        "commitMessageAction": "{{#if isReplacement}} {{else}}Update{{/if}} ",
+        "prBodyNotes": [
+          "{{#if isReplacement}}:warning: :warning: This is an End Of Life PR. This version was deprecated on April 30th, 2022. Kindly merge this PR before that date :warning: :warning:{{else}} {{/if}}"
+        ],
+        "addLabels": [
+          "{{#if isReplacement}}EOL-2022-04-30{{/if}}"
+        ],
+        "prBodyDefinitions": {
+          "Change": "`core-paas-base-image-node-12:{{{displayFrom}}}` to `core-paas-base-image-node-16:{{{displayTo}}}`"
+        },
+        "prBodyColumns": [
+          "Change"
+        ]
       },
-      "prBodyColumns": [
-        "Change"
-      ]
-    },
-    {
-      "matchDatasources": [
-        "docker"
-      ],
-      "matchPackagePatterns": [
-        "^artifacts.msap.io/mulesoft/core-paas-base-image-node-14.*"
-      ],
-      "replacementName": "artifacts.msap.io/mulesoft/core-paas-base-image-node-16",
-      "replacementVersion": "v4.7.39",
-      "description": "This Base Image has a specified end of life (EOL) date on April 30th, 2023. This image is no longer supported",
-      "commitMessagePrefix": "{{#if isReplacement}}:warning: EOL! |{{else}} {{/if}}",
-      "commitMessageTopic": "{{#if isReplacement}}Upgrade Node 14{{else}} dependency {{depName}}{{/if}}",
-      "commitMessageExtra": "{{#if isReplacement}}to Node 16 | EOL By April 30th, 2023 :warning:{{else}} to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}{{/if}}",
-      "commitMessageSuffix": "",
-      "commitMessageAction": "{{#if isReplacement}} {{else}}Update{{/if}} ",
-      "prBodyNotes": [
-        "{{#if isReplacement}}:warning: :warning: This is an End Of Life PR. This version was deprecated on April 30th, 2023. Kindly merge this PR before that date :warning: :warning:{{else}} {{/if}}"
-      ],
-      "addLabels": [
-        "{{#if isReplacement}}EOL-2023-04-30{{/if}}"
-      ],
-      "prBodyDefinitions": {
-        "Change": "`core-paas-base-image-node-14:{{{displayFrom}}}` to `core-paas-base-image-node-16:{{{displayTo}}}`"
+      {
+        "matchDatasources": [
+          "docker"
+        ],
+        "matchPackagePatterns": [
+          "^artifacts.msap.io/mulesoft/core-paas-base-image-node-14.*"
+        ],
+        "replacementName": "artifacts.msap.io/mulesoft/core-paas-base-image-node-16",
+        "replacementVersion": "v4.7.39",
+        "description": "This Base Image has a specified end of life (EOL) date on April 30th, 2023. This image is no longer supported",
+        "commitMessagePrefix": "{{#if isReplacement}}:warning: EOL! |{{else}} {{/if}}",
+        "commitMessageTopic": "{{#if isReplacement}}Upgrade Node 14{{else}} dependency {{depName}}{{/if}}",
+        "commitMessageExtra": "{{#if isReplacement}}to Node 16 | EOL By April 30th, 2023 :warning:{{else}} to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}{{/if}}",
+        "commitMessageSuffix": "",
+        "commitMessageAction": "{{#if isReplacement}} {{else}}Update{{/if}} ",
+        "prBodyNotes": [
+          "{{#if isReplacement}}:warning: :warning: This is an End Of Life PR. This version was deprecated on April 30th, 2023. Kindly merge this PR before that date :warning: :warning:{{else}} {{/if}}"
+        ],
+        "addLabels": [
+          "{{#if isReplacement}}EOL-2023-04-30{{/if}}"
+        ],
+        "prBodyDefinitions": {
+          "Change": "`core-paas-base-image-node-14:{{{displayFrom}}}` to `core-paas-base-image-node-16:{{{displayTo}}}`"
+        },
+        "prBodyColumns": [
+          "Change"
+        ]
       },
-      "prBodyColumns": [
-        "Change"
-      ]
-    },
-    {
-      "matchDatasources": [
-        "docker"
-      ],
-      "matchPackagePatterns": [
-        "^artifacts.msap.io/mulesoft/core-paas-base-image-node-16.*"
-      ],
-      "replacementName": "artifacts.msap.io/mulesoft/core-paas-base-image-node-18",
-      "replacementVersion": "v4.7.37",
-      "description": "This Base Image has a specified end of life (EOL) date on September 11th, 2023. This image will no longer be supported after that date",
-      "commitMessagePrefix": "{{#if isReplacement}}:warning: EOL! |{{else}} {{/if}}",
-      "commitMessageTopic": "{{#if isReplacement}}Upgrade Node 16{{else}} dependency {{depName}}{{/if}}",
-      "commitMessageExtra": "{{#if isReplacement}}to Node 18 | EOL By September 11th, 2023 :warning:{{else}} to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}{{/if}}",
-      "commitMessageSuffix": "",
-      "commitMessageAction": "{{#if isReplacement}} {{else}}Update{{/if}} ",
-      "prBodyNotes": [
-        "{{#if isReplacement}}:warning: :warning: This is an End Of Life PR. This version is scheduled to reach its end of life on September 11th, 2023. Kindly merge this PR before that date :warning: :warning:{{else}} {{/if}}"
-      ],
-      "addLabels": [
-        "{{#if isReplacement}}EOL-2023-09-11{{/if}}"
-      ],
-      "prBodyDefinitions": {
-        "Change": "`core-paas-base-image-node-16:{{{displayFrom}}}` to `core-paas-base-image-node-18:{{{displayTo}}}`"
+      {
+        "matchDatasources": [
+          "docker"
+        ],
+        "matchPackagePatterns": [
+          "^artifacts.msap.io/mulesoft/core-paas-base-image-node-16.*"
+        ],
+        "replacementName": "artifacts.msap.io/mulesoft/core-paas-base-image-node-18",
+        "replacementVersion": "v4.7.37",
+        "description": "This Base Image has a specified end of life (EOL) date on September 11th, 2023. This image will no longer be supported after that date",
+        "commitMessagePrefix": "{{#if isReplacement}}:warning: EOL! |{{else}} {{/if}}",
+        "commitMessageTopic": "{{#if isReplacement}}Upgrade Node 16{{else}} dependency {{depName}}{{/if}}",
+        "commitMessageExtra": "{{#if isReplacement}}to Node 18 | EOL By September 11th, 2023 :warning:{{else}} to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}{{/if}}",
+        "commitMessageSuffix": "",
+        "commitMessageAction": "{{#if isReplacement}} {{else}}Update{{/if}} ",
+        "prBodyNotes": [
+          "{{#if isReplacement}}:warning: :warning: This is an End Of Life PR. This version is scheduled to reach its end of life on September 11th, 2023. Kindly merge this PR before that date :warning: :warning:{{else}} {{/if}}"
+        ],
+        "addLabels": [
+          "{{#if isReplacement}}EOL-2023-09-11{{/if}}"
+        ],
+        "prBodyDefinitions": {
+          "Change": "`core-paas-base-image-node-16:{{{displayFrom}}}` to `core-paas-base-image-node-18:{{{displayTo}}}`"
+        },
+        "prBodyColumns": [
+          "Change"
+        ]
       },
-      "prBodyColumns": [
-        "Change"
-      ]
-    },
-    {
-      "matchDatasources": [
-        "docker"
-      ],
-      "matchPackagePatterns": [
-        "^artifacts.msap.io/mulesoft/core-paas-base-image-openjdk-11.*"
-      ],
-      "replacementName": "artifacts.msap.io/mulesoft/core-paas-base-image-openjdk-17",
-      "replacementVersion": "v5.2.39",
-      "description": "This Base Image has a specified end of life (EOL) date on September 30th, 2026. This image will no longer be supported after that date",
-      "commitMessagePrefix": "{{#if isReplacement}}:warning: EOL! |{{else}} {{/if}}",
-      "commitMessageTopic": "{{#if isReplacement}}Upgrade OpenJDK 11{{else}} dependency {{depName}}{{/if}}",
-      "commitMessageExtra": "{{#if isReplacement}}to OpenJDK 17| EOL By September 30th, 2026 :warning:{{else}} to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}{{/if}}",
-      "commitMessageSuffix": "",
-      "commitMessageAction": "{{#if isReplacement}} {{else}}Update{{/if}} ",
-      "prBodyNotes": [
-        "{{#if isReplacement}}:warning: :warning: This is a End Of Life PR. This version is scheduled to reach its end of life on September 30th, 2026. Kindly merge this PR before that date :warning: :warning:{{else}} {{/if}}"
-      ],
-      "addLabels": [
-        "{{#if isReplacement}}EOL-2026-09-30{{/if}}"
-      ],
-      "prBodyDefinitions": {
-        "Change": "`core-paas-base-image-openjdk-11:{{{displayFrom}}}` to `core-paas-base-image-openjdk-17:{{{displayTo}}}`"
+      {
+        "matchDatasources": [
+          "docker"
+        ],
+        "matchPackagePatterns": [
+          "^artifacts.msap.io/mulesoft/core-paas-base-image-openjdk-11.*"
+        ],
+        "replacementName": "artifacts.msap.io/mulesoft/core-paas-base-image-openjdk-17",
+        "replacementVersion": "v5.2.39",
+        "description": "This Base Image has a specified end of life (EOL) date on September 30th, 2026. This image will no longer be supported after that date",
+        "commitMessagePrefix": "{{#if isReplacement}}:warning: EOL! |{{else}} {{/if}}",
+        "commitMessageTopic": "{{#if isReplacement}}Upgrade OpenJDK 11{{else}} dependency {{depName}}{{/if}}",
+        "commitMessageExtra": "{{#if isReplacement}}to OpenJDK 17| EOL By September 30th, 2026 :warning:{{else}} to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}{{/if}}",
+        "commitMessageSuffix": "",
+        "commitMessageAction": "{{#if isReplacement}} {{else}}Update{{/if}} ",
+        "prBodyNotes": [
+          "{{#if isReplacement}}:warning: :warning: This is a End Of Life PR. This version is scheduled to reach its end of life on September 30th, 2026. Kindly merge this PR before that date :warning: :warning:{{else}} {{/if}}"
+        ],
+        "addLabels": [
+          "{{#if isReplacement}}EOL-2026-09-30{{/if}}"
+        ],
+        "prBodyDefinitions": {
+          "Change": "`core-paas-base-image-openjdk-11:{{{displayFrom}}}` to `core-paas-base-image-openjdk-17:{{{displayTo}}}`"
+        },
+        "prBodyColumns": [
+          "Change"
+        ]
       },
-      "prBodyColumns": [
-        "Change"
-      ]
-    },
-    {
-      "matchDatasources": [
-        "docker"
-      ],
-      "matchPackagePatterns": [
-        "^artifacts.msap.io/mulesoft/core-paas-base-image-openjre-11.*"
-      ],
-      "replacementName": "artifacts.msap.io/mulesoft/core-paas-base-image-openjre-17",
-      "replacementVersion": "v5.2.39",
-      "description": "This Base Image has a specified end of life (EOL) date on September 30th, 2026. This image will no longer be supported after that date",
-      "commitMessagePrefix": "{{#if isReplacement}}:warning: EOL! |{{else}} {{/if}}",
-      "commitMessageTopic": "{{#if isReplacement}}Upgrade OpenJRE 11{{else}} dependency {{depName}}{{/if}}",
-      "commitMessageExtra": "{{#if isReplacement}}to OpenJRE 17| EOL By September 30th, 2026 :warning:{{else}} to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}{{/if}}",
-      "commitMessageSuffix": "",
-      "commitMessageAction": "{{#if isReplacement}} {{else}}Update{{/if}} ",
-      "prBodyNotes": [
-        "{{#if isReplacement}}:warning: :warning: This is a End Of Life PR. This version is scheduled to reach its end of life on September 30th, 2026. Kindly merge this PR before that date :warning: :warning:{{else}} {{/if}}"
-      ],
-      "addLabels": [
-        "{{#if isReplacement}}EOL-2026-09-30{{/if}}"
-      ],
-      "prBodyDefinitions": {
-        "Change": "`core-paas-base-image-openjdk-11:{{{displayFrom}}}` to `core-paas-base-image-openjdk-17:{{{displayTo}}}`"
-      },
-      "prBodyColumns": [
-        "Change"
-      ]
-    }, 
-    { 
-      "matchDatasources": [
-        "docker"
-      ],
-      "matchPackagePatterns": [
-        "^artifacts.msap.io/mulesoft/core-paas-base-image-ubuntu.*"
-      ],
-      "replacementName": "artifacts.msap.io/mulesoft/supply-chain-rhel-base-image",
-      "replacementVersion": "2.1.14",
-      "description": "This Ubuntu Base Image needs to be migrated to RHEL9 based images to become fedRAMP compliant. ",
-      "commitMessagePrefix": "{{#if isReplacement}}:warning: EOL! |{{else}} {{/if}}",
-      "commitMessageTopic": "{{#if isReplacement}}Upgrade OpenJRE 11{{else}} dependency {{depName}}{{/if}}",
-      "commitMessageExtra": "{{#if isReplacement}}to OpenJRE 17| EOL By September 30th, 2026 :warning:{{else}} to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}{{/if}}",
-      "commitMessageSuffix": "",
-      "commitMessageAction": "{{#if isReplacement}} {{else}}Update{{/if}} ",
-      "prBodyNotes": [
-        "{{#if isReplacement}}:warning: :warning: This is a End Of Life PR.  Kindly merge this PR before that date :warning: :warning:{{else}} {{/if}}"
-      ],
-      "addLabels": [
-        "{{#if isReplacement}}EOL-2026-09-30{{/if}}"
-      ],
-      "prBodyDefinitions": {
-        "Change": "`core-paas-base-image-ubuntu:{{{displayFrom}}}` to `supply-chain-rhel-base-image:{{{displayTo}}}`"
-      },
-      "prBodyColumns": [
-        "Change"
-      ]
-    }
-  ]
+      {
+        "matchDatasources": [
+          "docker"
+        ],
+        "matchPackagePatterns": [
+          "^artifacts.msap.io/mulesoft/core-paas-base-image-openjre-11.*"
+        ],
+        "replacementName": "artifacts.msap.io/mulesoft/core-paas-base-image-openjre-17",
+        "replacementVersion": "v5.2.39",
+        "description": "This Base Image has a specified end of life (EOL) date on September 30th, 2026. This image will no longer be supported after that date",
+        "commitMessagePrefix": "{{#if isReplacement}}:warning: EOL! |{{else}} {{/if}}",
+        "commitMessageTopic": "{{#if isReplacement}}Upgrade OpenJRE 11{{else}} dependency {{depName}}{{/if}}",
+        "commitMessageExtra": "{{#if isReplacement}}to OpenJRE 17| EOL By September 30th, 2026 :warning:{{else}} to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}{{/if}}",
+        "commitMessageSuffix": "",
+        "commitMessageAction": "{{#if isReplacement}} {{else}}Update{{/if}} ",
+        "prBodyNotes": [
+          "{{#if isReplacement}}:warning: :warning: This is a End Of Life PR. This version is scheduled to reach its end of life on September 30th, 2026. Kindly merge this PR before that date :warning: :warning:{{else}} {{/if}}"
+        ],
+        "addLabels": [
+          "{{#if isReplacement}}EOL-2026-09-30{{/if}}"
+        ],
+        "prBodyDefinitions": {
+          "Change": "`core-paas-base-image-openjdk-11:{{{displayFrom}}}` to `core-paas-base-image-openjdk-17:{{{displayTo}}}`"
+        },
+        "prBodyColumns": [
+          "Change"
+        ]
+      }, 
+      { 
+        "matchDatasources": [
+          "docker"
+        ],
+        "matchPackagePatterns": [
+          "^artifacts.msap.io/mulesoft/core-paas-base-image-ubuntu.*"
+        ],
+        "replacementName": "artifacts.msap.io/mulesoft/supply-chain-rhel-base-image",
+        "replacementVersion": "2.1.14",
+        "description": "This Ubuntu Base Image needs to be migrated to RHEL9 based images to become fedRAMP compliant. ",
+        "commitMessagePrefix": "{{#if isReplacement}}:warning: EOL! |{{else}} {{/if}}",
+        "commitMessageTopic": "{{#if isReplacement}}Upgrade OpenJRE 11{{else}} dependency {{depName}}{{/if}}",
+        "commitMessageExtra": "{{#if isReplacement}}to OpenJRE 17| EOL By September 30th, 2026 :warning:{{else}} to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}{{/if}}",
+        "commitMessageSuffix": "",
+        "commitMessageAction": "{{#if isReplacement}} {{else}}Update{{/if}} ",
+        "prBodyNotes": [
+          "{{#if isReplacement}}:warning: :warning: This is a End Of Life PR.  Kindly merge this PR before that date :warning: :warning:{{else}} {{/if}}"
+        ],
+        "addLabels": [
+          "{{#if isReplacement}}EOL-2026-09-30{{/if}}"
+        ],
+        "prBodyDefinitions": {
+          "Change": "`core-paas-base-image-ubuntu:{{{displayFrom}}}` to `supply-chain-rhel-base-image:{{{displayTo}}}`"
+        },
+        "prBodyColumns": [
+          "Change"
+        ]
+      }
+    ]
 }
