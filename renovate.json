@@ -157,7 +157,7 @@
         "commitMessageSuffix": "",
         "commitMessageAction": "{{#if isReplacement}} {{else}}Update{{/if}} ",
         "prBodyNotes": [
-          "{{#if isReplacement}}:warning: :warning: This is a End Of Life PR.  Kindly merge this PR before that date :warning: :warning:{{else}} {{/if}}"
+          "{{#if isReplacement}}:warning: :warnind Of Life PR.  Kindly merge this PR before that date :warning: :warning:{{else}} {{/if}}"
         ],
         "addLabels": [
           "{{#if isReplacement}}EOL-2026-09-30{{/if}}"
