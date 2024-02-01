@@ -146,7 +146,7 @@
           "docker"
         ],
         "matchPackagePatterns": [
-          "^artifacts.msap.io/mulesoft/core-paas-base-image-ubuntu.*"
+          "^artifacts.msap.io/mulesoft/core-paas-base-image-ubuntu.*:latest"
         ],
         "replacementName": "artifacts.msap.io/mulesoft/supply-chain-rhel-base-image",
         "replacementVersion": "2.1.14",
