@@ -18,8 +18,8 @@ USER root
 # https://www.bouncycastle.org/fips-java/RELEASE_NOTES.md
 ENV BC_FIPS_VERSION 1.0.2.4
 
-ENV OTEL_VERSION=1.28.0
-ENV CLIENT_VERSION=1.28.0
+ENV MONC_OTEL_EXT=1.28.0
+ENV MONC_OTEL_JAVA_AGENT=1.28.0
 
 RUN set -ex; \
     \
@@ -35,6 +35,12 @@ RUN set -ex; \
     openjdk-11-jdk \
     ; \
     rm -rf /var/lib/apt/lists/*
+
+RUN curl -u "${NEXUS_USER}:${NEXUS_PASS}" \
+  ${REPOSITORY}/io/opentelemetry/javaagent/opentelemetry-javaagent/${MONC_OTEL_JAVA_AGENT}/opentelemetry-javaagent-${MONC_OTEL_JAVA_AGENT}.jar -o opentelemetry-javaagent-${MONC_OTEL_JAVA_AGENT}.jar
+
+RUN curl -u "${NEXUS_USER}:${NEXUS_PASS}" \
+  ${REPOSITORY}/com/salesforce/monitoring/opentelemetry/salesforce-opentelemetry-extension/${MONC_OTEL_EXT}/salesforce-opentelemetry-extension-${MONC_OTEL_EXT}.jar -o salesforce-opentelemetry-extension-${MONC_OTEL_EXT}.jar
 
 # Add a wrapper to be able to turn on/off FIPS with env var FIPS_ENABLED
 RUN mv /usr/bin/java /usr/bin/java.real
