@@ -18,6 +18,9 @@ USER root
 # https://www.bouncycastle.org/fips-java/RELEASE_NOTES.md
 ENV BC_FIPS_VERSION 1.0.2.4
 
+ENV OTEL_VERSION=1.28.0
+ENV CLIENT_VERSION=1.28.0
+
 RUN set -ex; \
     \
     # deal with slim variants not having man page directories (which causes "update-alternatives" to fail)
