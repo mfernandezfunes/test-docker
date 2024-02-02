@@ -160,7 +160,7 @@
         "{{#if isReplacement}}:warning::warning: PLEASE CHECK YOUR APP WILL NOT HAVE ANY ISSUE DUE TO THIS MIGRATION :warning: :warning:{{else}} {{/if}}"
       ],
       "addLabels": [
-        "{{#if isReplacement}}:alert-siren: :warning: AEOL-2026-09-30{{/if}}"
+        "{{#if isReplacement}}:warning: BASEIMAGE-RHEL{{/if}}"
       ],
       "prBodyDefinitions": {
         "Change": "`core-paas-base-image-ubuntu:{{{displayFrom}}}` to `supply-chain-rhel-base-image:{{{displayTo}}}`"
