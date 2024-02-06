@@ -151,6 +151,7 @@
       "replacementName": "artifacts.msap.io/mulesoft/supply-chain-rhel-base-image",
       "replacementVersion": "2.1.14",
       "description": "This Ubuntu Base Image needs to be migrated to RHEL9 based images to become fedRAMP compliant. ",
+      "commitMessagePrefix": "{{#if isReplacement}}:warning: BASE IMAGE MIGRATION! |{{else}} {{/if}}",
       "prBodyNotes": [
         "{{#if isReplacement}}:warning::warning: PLEASE CHECK YOUR APP WILL NOT HAVE ANY ISSUE DUE TO THIS MIGRATION :warning: :warning:{{else}} {{/if}}"
       ],
