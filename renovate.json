@@ -160,7 +160,8 @@
         "{{#if isReplacement}}:warning::warning: PLEASE CHECK YOUR APP WILL NOT HAVE ANY ISSUE DUE TO THIS MIGRATION :warning: :warning:{{else}} {{/if}}"
       ],
       "addLabels": [
-        "{{#if isReplacement}}:warning: BASEIMAGE-RHEL{{/if}}", "MIGRATION"
+        "{{#if isReplacement}}:warning: BASEIMAGE-RHEL{{/if}}", "MIGRATION",
+        "MIGRATION"
       ],
       "prBodyDefinitions": {
         "Change": "`core-paas-base-image-ubuntu:{{{displayFrom}}}` to `supply-chain-rhel-base-image:{{{displayTo}}}`"
