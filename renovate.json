@@ -155,6 +155,7 @@
       "commitMessageTopic": "{{#if isReplacement}}Ubuntu Base Image {{else}} dependency {{depName}}{{/if}}",
       "commitMessageExtra": "{{#if isReplacement}}to Rhel Base Image {{{displayTo}}} :warning:{{else}} to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}{{/if}}",
       "commitMessageSuffix": "",
+      "commitMessageAction": "{{#if isReplacement}} {{else}}Update{{/if}} ",
       "prBodyNotes": [
         "{{#if isReplacement}}:warning::warning: PLEASE CHECK YOUR APP WILL NOT HAVE ANY ISSUE DUE TO THIS MIGRATION :warning: :warning:{{else}} {{/if}}"
       ],
@@ -183,6 +184,7 @@
       "commitMessageTopic": "{{#if isReplacement}}Ubuntu Base Image {{else}} dependency {{depName}}{{/if}}",
       "commitMessageExtra": "{{#if isReplacement}}to Rhel Base Image {{{displayTo}}} :warning:{{else}} to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}{{/if}}",
       "commitMessageSuffix": "",
+      "commitMessageAction": "{{#if isReplacement}} {{else}}Update{{/if}} ",
       "prBodyNotes": [
         "{{#if isReplacement}}:warning::warning: PLEASE CHECK YOUR APP WILL NOT HAVE ANY ISSUE DUE TO THIS MIGRATION :warning: :warning:{{else}} {{/if}}"
       ],
