@@ -163,10 +163,10 @@
         "{{#if isReplacement}}ATENTION{{/if}}"
       ],
       "prBodyDefinitions": {
-        "Migrate": "`core-paas-base-image-ubuntu:{{{displayFrom}}}` to `supply-chain-rhel-base-image:{{{displayTo}}}`"
+        "Change": "`core-paas-base-image-ubuntu:{{{displayFrom}}}` to `supply-chain-rhel-base-image:{{{displayTo}}}`"
       },
       "prBodyColumns": [
-        "Migrate"
+        "Change"
       ]
     }, 
     { 
@@ -191,10 +191,10 @@
         "{{#if isReplacement}}ATENTION{{/if}}"
       ],
       "prBodyDefinitions": {
-        "Migrate": "`core-paas-base-image-node-16:{{{displayFrom}}}` to `supply-chain-node-16-base-image:{{{displayTo}}}`"
+        "Change": "`core-paas-base-image-node-16:{{{displayFrom}}}` to `supply-chain-node-16-base-image:{{{displayTo}}}`"
       },
       "prBodyColumns": [
-        "Migrate"
+        "Change"
       ]
     }, 
     { 
@@ -219,10 +219,10 @@
         "{{#if isReplacement}}ATENTION{{/if}}"
       ],
       "prBodyDefinitions": {
-        "Migrate": "`core-paas-base-image-node-18:{{{displayFrom}}}` to `supply-chain-node-18-base-image:{{{displayTo}}}`"
+        "Change": "`core-paas-base-image-node-18:{{{displayFrom}}}` to `supply-chain-node-18-base-image:{{{displayTo}}}`"
       },
       "prBodyColumns": [
-        "Migrate"
+        "Change"
       ]
     }, 
     { 
