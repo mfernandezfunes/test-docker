@@ -3,7 +3,7 @@ This repository contains a demo used to showcase capabilities of Renovate.
 
 
 
-### Usage
+### Usagee
 
 ``` 
 curl 
