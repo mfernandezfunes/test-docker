@@ -1,0 +1,1 @@
+artifacts.msap.io/mulesoft/core-paas-base-image-ubuntu:5.2.149
