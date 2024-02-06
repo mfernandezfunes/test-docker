@@ -219,10 +219,10 @@
         "{{#if isReplacement}}ATENTION{{/if}}"
       ],
       "prBodyDefinitions": {
-        "Change": "{{#if isReplacement}}`core-paas-base-image-node-18:{{{displayFrom}}}` to `supply-chain-node-18-base-image:{{{displayTo}}}` {{else}} {{/if}}"
+        "Change": "{{#if isReplacement}}`core-paas-base-image-node-18:{{{displayFrom}}}` to `supply-chain-node-18-base-image:{{{displayTo}}}` {{/if}}"
       },
       "prBodyColumns": [
-
+        "Change"
       ]
     }, 
     { 
