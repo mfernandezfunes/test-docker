@@ -164,7 +164,7 @@
         "MIGRATION"
       ],
       "prBodyDefinitions": {
-        "Change": "`core-paas-base-image-ubuntu:{{{displayFrom}}}` to `supply-chain-rhel-base-image:{{{displayTo}}}`"
+        "Migrate": "`core-paas-base-image-ubuntu:{{{displayFrom}}}` to `supply-chain-rhel-base-image:{{{displayTo}}}`"
       },
       "prBodyColumns": [
         "Migrate"
