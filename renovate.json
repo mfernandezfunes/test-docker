@@ -3,7 +3,7 @@
     "config:base"
   ],
   "packageRules": [
-    { // core-paas-base-image-ubuntu REPLACEMENT
+    { 
       "matchDatasources": [
         "docker"
       ],
