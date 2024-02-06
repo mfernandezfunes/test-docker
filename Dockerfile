@@ -3,9 +3,9 @@
 FROM artifacts.msap.io/mulesoft/core-paas-base-image-openjdk-17:v5.2.142 as base
 
 # A few reasons for installing distribution-provided OpenJDK:
-#dd
+#
 #  1. Oracle.  Licensing prevents us from redistributing the official JDK.
-#x
+#
 #  2. Compiling OpenJDK also requires the JDK to be installed, and it gets
 #     really hairy.
 #
