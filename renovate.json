@@ -204,9 +204,16 @@
       "matchPackagePatterns": [
         "^artifacts.msap.io/mulesoft/core-paas-base-image-node-18.*"
       ],
-      "matchUpdateTypes": ["replacement"],
       "replacementName": "artifacts.msap.io/mulesoft/supply-chain-node-18-base-image",
-      "replacementVersion": "2.1.15",
+      "replacementVersion": "2.1.15"
+    },{
+      "matchDatasources": [
+        "docker"
+      ],
+      "matchPackagePatterns": [
+        "^artifacts.msap.io/mulesoft/core-paas-base-image-node-18.*"
+      ],
+      "matchUpdateTypes": ["replacement"],
       "description": "This Base Image needs to be migrated to RHEL9 based images to become fedRAMP compliant. ",
       "commitMessagePrefix": "{{#if isReplacement}}:warning: BASE IMAGE REPLACEMENT! |{{else}} {{/if}}",
       "commitMessageTopic": "{{#if isReplacement}}Migrate Ubuntu Base Image {{else}} dependency {{depName}}{{/if}}",
