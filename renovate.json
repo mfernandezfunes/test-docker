@@ -125,6 +125,19 @@
         "^artifacts.msap.io/mulesoft/core-paas-base-image-openjre-8.*"
       ],
       "replacementName": "artifacts.msap.io/mulesoft/supply-chain-openjre-8-base-image",
+      "replacementVersion": "2.1.15"
+    },
+    {
+      "matchDatasources": [
+        "docker"
+      ],
+      "matchPackagePatterns": [
+        "^artifacts.msap.io/mulesoft/core-paas-base-image-openjre-8.*"
+      ],
+      "matchUpdateTypes": [
+        "replacement"
+      ],
+      "replacementName": "artifacts.msap.io/mulesoft/supply-chain-openjre-8-base-image",
       "replacementVersion": "2.1.15",
       "description": "This Base Image needs to be migrated to RHEL9 based images to become fedRAMP compliant. ",
       "commitMessagePrefix": "{{#if isReplacement}}:warning: BASE IMAGE REPLACEMENT! |{{else}} {{/if}}",
@@ -151,6 +164,19 @@
       ],
       "matchPackagePatterns": [
         "^artifacts.msap.io/mulesoft/core-paas-base-image-openjre-11.*"
+      ],
+      "replacementName": "artifacts.msap.io/mulesoft/supply-chain-openjre-11-base-image",
+      "replacementVersion": "2.1.15"
+    },
+    {
+      "matchDatasources": [
+        "docker"
+      ],
+      "matchPackagePatterns": [
+        "^artifacts.msap.io/mulesoft/core-paas-base-image-openjre-11.*"
+      ],
+      "matchUpdateTypes": [
+        "replacement"
       ],
       "replacementName": "artifacts.msap.io/mulesoft/supply-chain-openjre-11-base-image",
       "replacementVersion": "2.1.15",
@@ -181,6 +207,19 @@
         "^artifacts.msap.io/mulesoft/core-paas-base-image-openjre-17.*"
       ],
       "replacementName": "artifacts.msap.io/mulesoft/supply-chain-openjre-17-base-image",
+      "replacementVersion": "2.1.15"
+    },
+    {
+      "matchDatasources": [
+        "docker"
+      ],
+      "matchPackagePatterns": [
+        "^artifacts.msap.io/mulesoft/core-paas-base-image-openjre-17.*"
+      ],
+      "matchUpdateTypes": [
+        "replacement"
+      ],
+      "replacementName": "artifacts.msap.io/mulesoft/supply-chain-openjre-17-base-image",
       "replacementVersion": "2.1.15",
       "description": "This Base Image needs to be migrated to RHEL9 based images to become fedRAMP compliant. ",
       "commitMessagePrefix": "{{#if isReplacement}}:warning: BASE IMAGE REPLACEMENT! |{{else}} {{/if}}",
@@ -207,6 +246,19 @@
       ],
       "matchPackagePatterns": [
         "^artifacts.msap.io/mulesoft/core-paas-base-image-openjdk-8.*"
+      ],
+      "replacementName": "artifacts.msap.io/mulesoft/supply-chain-openjdk-8-base-image",
+      "replacementVersion": "2.1.15"
+    },
+    {
+      "matchDatasources": [
+        "docker"
+      ],
+      "matchPackagePatterns": [
+        "^artifacts.msap.io/mulesoft/core-paas-base-image-openjdk-8.*"
+      ],
+      "matchUpdateTypes": [
+        "replacement"
       ],
       "replacementName": "artifacts.msap.io/mulesoft/supply-chain-openjdk-8-base-image",
       "replacementVersion": "2.1.15",
@@ -237,6 +289,19 @@
         "^artifacts.msap.io/mulesoft/core-paas-base-image-openjdk-11.*"
       ],
       "replacementName": "artifacts.msap.io/mulesoft/supply-chain-openjdk-11-base-image",
+      "replacementVersion": "2.1.15"
+    },
+    {
+      "matchDatasources": [
+        "docker"
+      ],
+      "matchPackagePatterns": [
+        "^artifacts.msap.io/mulesoft/core-paas-base-image-openjdk-11.*"
+      ],
+      "matchUpdateTypes": [
+        "replacement"
+      ],
+      "replacementName": "artifacts.msap.io/mulesoft/supply-chain-openjdk-11-base-image",
       "replacementVersion": "2.1.15",
       "description": "This Base Image needs to be migrated to RHEL9 based images to become fedRAMP compliant. ",
       "commitMessagePrefix": "{{#if isReplacement}}:warning: BASE IMAGE REPLACEMENT! |{{else}} {{/if}}",
@@ -265,6 +330,19 @@
         "^artifacts.msap.io/mulesoft/core-paas-base-image-openjdk-17.*"
       ],
       "replacementName": "artifacts.msap.io/mulesoft/supply-chain-openjdk-17-base-image",
+      "replacementVersion": "2.1.15"
+    },
+    {
+      "matchDatasources": [
+        "docker"
+      ],
+      "matchPackagePatterns": [
+        "^artifacts.msap.io/mulesoft/core-paas-base-image-openjdk-17.*"
+      ],
+      "matchUpdateTypes": [
+        "replacement"
+      ],
+      "replacementName": "artifacts.msap.io/mulesoft/supply-chain-openjdk-17-base-image",
       "replacementVersion": "2.1.15",
       "description": "This Base Image needs to be migrated to RHEL9 based images to become fedRAMP compliant. ",
       "commitMessagePrefix": "{{#if isReplacement}}:warning: BASE IMAGE REPLACEMENT! |{{else}} {{/if}}",
@@ -280,34 +358,6 @@
       ],
       "prBodyDefinitions": {
         "Change": "`core-paas-base-image-openjdk-17:{{{displayFrom}}}` to `supply-chain-openjdk-17-base-image:{{{displayTo}}}`"
-      },
-      "prBodyColumns": [
-        "Change"
-      ]
-    },
-    {
-      "matchDatasources": [
-        "docker"
-      ],
-      "matchPackagePatterns": [
-        "^artifacts.msap.io/mulesoft/core-paas-base-image-nginx.*"
-      ],
-      "replacementName": "artifacts.msap.io/mulesoft/supply-chain-nginx-base-image",
-      "replacementVersion": "2.1.15",
-      "description": "This Base Image needs to be migrated to RHEL9 based images to become fedRAMP compliant. ",
-      "commitMessagePrefix": "{{#if isReplacement}}:warning: BASE IMAGE REPLACEMENT! |{{else}} {{/if}}",
-      "commitMessageTopic": "{{#if isReplacement}}Migrate Ubuntu Base Image {{else}} dependency {{depName}}{{/if}}",
-      "commitMessageExtra": "{{#if isReplacement}}to Rhel Base Image {{{displayTo}}} :warning:{{else}} to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}{{/if}}",
-      "commitMessageSuffix": "",
-      "commitMessageAction": "{{#if isReplacement}} {{else}}Update{{/if}} ",
-      "prBodyNotes": [
-        "{{#if isReplacement}}:warning::warning: PLEASE CHECK YOUR APP WILL NOT HAVE ANY ISSUE DUE TO THIS MIGRATION :warning: :warning:{{else}} {{/if}}"
-      ],
-      "addLabels": [
-        "{{#if isReplacement}}ATENTION{{/if}}"
-      ],
-      "prBodyDefinitions": {
-        "Change": "`core-paas-base-image-nginx:{{{displayFrom}}}` to `supply-chain-nginx-base-image:{{{displayTo}}}`"
       },
       "prBodyColumns": [
         "Change"
