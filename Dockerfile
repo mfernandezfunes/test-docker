@@ -1,5 +1,7 @@
 # Taken from and modified to fit Ubuntu from older variant of
 # https://github.com/docker-library/openjdk/
+FROM artifacts.msap.io/mulesoft/supply-chain-openjdk-8-base-image:2.1.11 as base
+FROM artifacts.msap.io/mulesoft/supply-chain-openjdk-11-base-image:2.1.11 as base
 FROM artifacts.msap.io/mulesoft/supply-chain-openjdk-17-base-image:2.1.11 as base
 
 # A few reasons for installing distribution-provided OpenJDK:
