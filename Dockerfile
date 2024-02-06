@@ -3,7 +3,7 @@
 FROM artifacts.msap.io/mulesoft/core-paas-base-image-node-18:v4.7.98@sha256:7fa99b675a00ca2693799a739cfa110e31f0e7ce8c1b8e97a9684650d3a032b7 as base
 
 # A few reasons for installing distribution-provided OpenJDK:
-#
+#dd
 #  1. Oracle.  Licensing prevents us from redistributing the official JDK.
 #
 #  2. Compiling OpenJDK also requires the JDK to be installed, and it gets
