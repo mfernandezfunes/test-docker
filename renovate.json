@@ -11,7 +11,7 @@
         "^artifacts.msap.io/mulesoft/core-paas-base-image-ubuntu.*"
       ],
       "replacementName": "artifacts.msap.io/mulesoft/supply-chain-rhel-base-image",
-      "replacementVersion": "2.1.15"
+      "replacementVersion": "2.1.12"
     },
     {
       "matchDatasources": [
@@ -86,7 +86,7 @@
         "^artifacts.msap.io/mulesoft/core-paas-base-image-node-18.*"
       ],
       "replacementName": "artifacts.msap.io/mulesoft/supply-chain-node-18-base-image",
-      "replacementVersion": "2.1.15"
+      "replacementVersion": "2.1.12"
     },
     {
       "matchDatasources": [
@@ -125,7 +125,7 @@
         "^artifacts.msap.io/mulesoft/core-paas-base-image-openjre-8.*"
       ],
       "replacementName": "artifacts.msap.io/mulesoft/supply-chain-openjre-8-base-image",
-      "replacementVersion": "2.1.15"
+      "replacementVersion": "2.1.12"
     },
     {
       "matchDatasources": [
@@ -137,8 +137,6 @@
       "matchUpdateTypes": [
         "replacement"
       ],
-      "replacementName": "artifacts.msap.io/mulesoft/supply-chain-openjre-8-base-image",
-      "replacementVersion": "2.1.15",
       "description": "This Base Image needs to be migrated to RHEL9 based images to become fedRAMP compliant. ",
       "commitMessagePrefix": "{{#if isReplacement}}:warning: BASE IMAGE REPLACEMENT! |{{else}} {{/if}}",
       "commitMessageTopic": "{{#if isReplacement}}Migrate Ubuntu Base Image {{else}} dependency {{depName}}{{/if}}",
@@ -166,7 +164,7 @@
         "^artifacts.msap.io/mulesoft/core-paas-base-image-openjre-11.*"
       ],
       "replacementName": "artifacts.msap.io/mulesoft/supply-chain-openjre-11-base-image",
-      "replacementVersion": "2.1.15"
+      "replacementVersion": "2.1.12"
     },
     {
       "matchDatasources": [
@@ -178,8 +176,6 @@
       "matchUpdateTypes": [
         "replacement"
       ],
-      "replacementName": "artifacts.msap.io/mulesoft/supply-chain-openjre-11-base-image",
-      "replacementVersion": "2.1.15",
       "description": "This Base Image needs to be migrated to RHEL9 based images to become fedRAMP compliant. ",
       "commitMessagePrefix": "{{#if isReplacement}}:warning: BASE IMAGE REPLACEMENT! |{{else}} {{/if}}",
       "commitMessageTopic": "{{#if isReplacement}}Migrate Ubuntu Base Image {{else}} dependency {{depName}}{{/if}}",
@@ -207,7 +203,7 @@
         "^artifacts.msap.io/mulesoft/core-paas-base-image-openjre-17.*"
       ],
       "replacementName": "artifacts.msap.io/mulesoft/supply-chain-openjre-17-base-image",
-      "replacementVersion": "2.1.15"
+      "replacementVersion": "2.1.12"
     },
     {
       "matchDatasources": [
@@ -219,8 +215,6 @@
       "matchUpdateTypes": [
         "replacement"
       ],
-      "replacementName": "artifacts.msap.io/mulesoft/supply-chain-openjre-17-base-image",
-      "replacementVersion": "2.1.15",
       "description": "This Base Image needs to be migrated to RHEL9 based images to become fedRAMP compliant. ",
       "commitMessagePrefix": "{{#if isReplacement}}:warning: BASE IMAGE REPLACEMENT! |{{else}} {{/if}}",
       "commitMessageTopic": "{{#if isReplacement}}Migrate Ubuntu Base Image {{else}} dependency {{depName}}{{/if}}",
@@ -248,7 +242,7 @@
         "^artifacts.msap.io/mulesoft/core-paas-base-image-openjdk-8.*"
       ],
       "replacementName": "artifacts.msap.io/mulesoft/supply-chain-openjdk-8-base-image",
-      "replacementVersion": "2.1.15"
+      "replacementVersion": "2.1.12"
     },
     {
       "matchDatasources": [
@@ -260,8 +254,6 @@
       "matchUpdateTypes": [
         "replacement"
       ],
-      "replacementName": "artifacts.msap.io/mulesoft/supply-chain-openjdk-8-base-image",
-      "replacementVersion": "2.1.15",
       "description": "This Base Image needs to be migrated to RHEL9 based images to become fedRAMP compliant. ",
       "commitMessagePrefix": "{{#if isReplacement}}:warning: BASE IMAGE REPLACEMENT! |{{else}} {{/if}}",
       "commitMessageTopic": "{{#if isReplacement}}Migrate Ubuntu Base Image {{else}} dependency {{depName}}{{/if}}",
@@ -289,7 +281,7 @@
         "^artifacts.msap.io/mulesoft/core-paas-base-image-openjdk-11.*"
       ],
       "replacementName": "artifacts.msap.io/mulesoft/supply-chain-openjdk-11-base-image",
-      "replacementVersion": "2.1.15"
+      "replacementVersion": "2.1.12"
     },
     {
       "matchDatasources": [
@@ -301,8 +293,6 @@
       "matchUpdateTypes": [
         "replacement"
       ],
-      "replacementName": "artifacts.msap.io/mulesoft/supply-chain-openjdk-11-base-image",
-      "replacementVersion": "2.1.15",
       "description": "This Base Image needs to be migrated to RHEL9 based images to become fedRAMP compliant. ",
       "commitMessagePrefix": "{{#if isReplacement}}:warning: BASE IMAGE REPLACEMENT! |{{else}} {{/if}}",
       "commitMessageTopic": "{{#if isReplacement}}Migrate Ubuntu Base Image {{else}} dependency {{depName}}{{/if}}",
@@ -330,7 +320,7 @@
         "^artifacts.msap.io/mulesoft/core-paas-base-image-openjdk-17.*"
       ],
       "replacementName": "artifacts.msap.io/mulesoft/supply-chain-openjdk-17-base-image",
-      "replacementVersion": "2.1.15"
+      "replacementVersion": "2.1.12"
     },
     {
       "matchDatasources": [
@@ -342,8 +332,6 @@
       "matchUpdateTypes": [
         "replacement"
       ],
-      "replacementName": "artifacts.msap.io/mulesoft/supply-chain-openjdk-17-base-image",
-      "replacementVersion": "2.1.12",
       "description": "This Base Image needs to be migrated to RHEL9 based images to become fedRAMP compliant. ",
       "commitMessagePrefix": "{{#if isReplacement}}:warning: BASE IMAGE REPLACEMENT! |{{else}} {{/if}}",
       "commitMessageTopic": "{{#if isReplacement}}Migrate Ubuntu Base Image {{else}} dependency {{depName}}{{/if}}",
