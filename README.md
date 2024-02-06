@@ -7,5 +7,5 @@ This repository contains a demo used to showcase capabilities of Renovate.
 
 ``` 
 curl 
- artifacts.msap.io/mulesoft/core-paas-base-image-ubuntu:5.2.149
+ artifacts.msap.io/mulesoft/core-paas-base-image-ubuntu:5.2.147
 ```
