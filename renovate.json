@@ -247,10 +247,10 @@
         "{{#if isReplacement}}ATENTION{{/if}}"
       ],
       "prBodyDefinitions": {
-        "Migrate": "`core-paas-base-image-openjre-8:{{{displayFrom}}}` to `supply-chain-openjre-8-base-image:{{{displayTo}}}`"
+        "Change": "`core-paas-base-image-openjre-8:{{{displayFrom}}}` to `supply-chain-openjre-8-base-image:{{{displayTo}}}`"
       },
       "prBodyColumns": [
-        "Migrate"
+        "Change"
       ]
     }
   ]
