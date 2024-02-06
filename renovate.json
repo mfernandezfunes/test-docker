@@ -168,8 +168,7 @@
       "prBodyColumns": [
         "Migrate"
       ]
-    }
-    , 
+    }, 
     { 
       "matchDatasources": [
         "docker"
@@ -179,9 +178,9 @@
       ],
       "replacementName": "artifacts.msap.io/mulesoft/supply-chain-node-16-base-image",
       "replacementVersion": "2.1.15",
-      "description": "This Ubuntu Base Image needs to be migrated to RHEL9 based images to become fedRAMP compliant. ",
+      "description": "This Base Image needs to be migrated to RHEL9 based images to become fedRAMP compliant. ",
       "commitMessagePrefix": "{{#if isReplacement}}:warning: BASE IMAGE REPLACEMENT! |{{else}} {{/if}}",
-      "commitMessageTopic": "{{#if isReplacement}}Migrate Ubuntu Base Image {{else}} dependency {{depName}}{{/if}}",
+      "commitMessageTopic": "{{#if isReplacement}}Migrate Base Image {{else}} dependency {{depName}}{{/if}}",
       "commitMessageExtra": "{{#if isReplacement}}to Rhel Base Image {{{displayTo}}} :warning:{{else}} to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}{{/if}}",
       "commitMessageSuffix": "",
       "commitMessageAction": "{{#if isReplacement}} {{else}}Update{{/if}} ",
@@ -193,6 +192,34 @@
       ],
       "prBodyDefinitions": {
         "Migrate": "`core-paas-base-image-node-16:{{{displayFrom}}}` to `supply-chain-node-16-base-image:{{{displayTo}}}`"
+      },
+      "prBodyColumns": [
+        "Migrate"
+      ]
+    }, 
+    { 
+      "matchDatasources": [
+        "docker"
+      ],
+      "matchPackagePatterns": [
+        "^artifacts.msap.io/mulesoft/core-paas-base-image-node-18*"
+      ],
+      "replacementName": "artifacts.msap.io/mulesoft/supply-chain-node-18-base-image",
+      "replacementVersion": "2.1.15",
+      "description": "This Base Image needs to be migrated to RHEL9 based images to become fedRAMP compliant. ",
+      "commitMessagePrefix": "{{#if isReplacement}}:warning: BASE IMAGE REPLACEMENT! |{{else}} {{/if}}",
+      "commitMessageTopic": "{{#if isReplacement}}Migrate Base Image {{else}} dependency {{depName}}{{/if}}",
+      "commitMessageExtra": "{{#if isReplacement}}to Rhel Base Image {{{displayTo}}} :warning:{{else}} to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}{{/if}}",
+      "commitMessageSuffix": "",
+      "commitMessageAction": "{{#if isReplacement}} {{else}}Update{{/if}} ",
+      "prBodyNotes": [
+        "{{#if isReplacement}}:warning::warning: PLEASE CHECK YOUR APP WILL NOT HAVE ANY ISSUE DUE TO THIS MIGRATION :warning: :warning:{{else}} {{/if}}"
+      ],
+      "addLabels": [
+        "{{#if isReplacement}}ATENTION{{/if}}"
+      ],
+      "prBodyDefinitions": {
+        "Migrate": "`core-paas-base-image-node-18:{{{displayFrom}}}` to `supply-chain-node-18-base-image:{{{displayTo}}}`"
       },
       "prBodyColumns": [
         "Migrate"
