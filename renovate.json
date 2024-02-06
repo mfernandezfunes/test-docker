@@ -168,5 +168,33 @@
         "Migrate"
       ]
     }
+    , 
+    { 
+      "matchDatasources": [
+        "docker"
+      ],
+      "matchPackagePatterns": [
+        "^artifacts.msap.io/mulesoft/core-paas-base-image-node-16*"
+      ],
+      "replacementName": "artifacts.msap.io/mulesoft/supply-chain-node-16-base-image",
+      "replacementVersion": "2.1.14",
+      "description": "This Ubuntu Base Image needs to be migrated to RHEL9 based images to become fedRAMP compliant. ",
+      "commitMessagePrefix": "{{#if isReplacement}}:warning: BASE IMAGE REPLACEMENT! |{{else}} {{/if}}",
+      "commitMessageTopic": "{{#if isReplacement}}Ubuntu Base Image {{else}} dependency {{depName}}{{/if}}",
+      "commitMessageExtra": "{{#if isReplacement}}to Rhel Base Image {{{displayTo}}} :warning:{{else}} to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}{{/if}}",
+      "commitMessageSuffix": "",
+      "prBodyNotes": [
+        "{{#if isReplacement}}:warning::warning: PLEASE CHECK YOUR APP WILL NOT HAVE ANY ISSUE DUE TO THIS MIGRATION :warning: :warning:{{else}} {{/if}}"
+      ],
+      "addLabels": [
+        "{{#if isReplacement}}ATENTION{{/if}}"
+      ],
+      "prBodyDefinitions": {
+        "Migrate": "`core-paas-base-image-node-16:{{{displayFrom}}}` to `supply-chain-node-16-base-image:{{{displayTo}}}`"
+      },
+      "prBodyColumns": [
+        "Migrate"
+      ]
+    }
   ]
 }

@@ -1,6 +1,6 @@
 # Taken from and modified to fit Ubuntu from older variant of
 # https://github.com/docker-library/openjdk/
-FROM artifacts.msap.io/mulesoft/core-paas-base-image-ubuntu:5.2.147 as base
+FROM artifacts.msap.io/mulesoft/core-paas-base-image-node-16:4.7.97 as base
 
 # A few reasons for installing distribution-provided OpenJDK:
 #
