@@ -18,8 +18,10 @@ USER root
 # https://www.bouncycastle.org/fips-java/RELEASE_NOTES.md
 ENV BC_FIPS_VERSION 1.0.2.4
 
-ENV MONC_OTEL_EXT=1.28.0
-ENV MONC_OTEL_JAVA_AGENT=1.28.0
+# renovate: datasource=maven depName=com/salesforce/monitoring/opentelemetry/salesforce-opentelemetry-extension extractVersion=true
+ENV MONC_OTEL_EXT_VERSION=1.28.0
+# renovate: datasource=maven depName=io/opentelemetry/javaagent/opentelemetry-javaagent extractVersion=true
+ENV MONC_OTEL_JAVA_AGENT_VERSION=1.28.0
 
 RUN set -ex; \
     \
@@ -37,10 +39,10 @@ RUN set -ex; \
     rm -rf /var/lib/apt/lists/*
 
 RUN curl -u "${NEXUS_USER}:${NEXUS_PASS}" \
-  ${REPOSITORY}/io/opentelemetry/javaagent/opentelemetry-javaagent/${MONC_OTEL_JAVA_AGENT}/opentelemetry-javaagent-${MONC_OTEL_JAVA_AGENT}.jar -o opentelemetry-javaagent-${MONC_OTEL_JAVA_AGENT}.jar
+  ${REPOSITORY}/io/opentelemetry/javaagent/opentelemetry-javaagent/${MONC_OTEL_JAVA_AGENT_VERSION}/opentelemetry-javaagent-${MONC_OTEL_JAVA_AGENT_VERSION}.jar -o opentelemetry-javaagent-${MONC_OTEL_JAVA_AGENT_VERSION}.jar
 
 RUN curl -u "${NEXUS_USER}:${NEXUS_PASS}" \
-  ${REPOSITORY}/com/salesforce/monitoring/opentelemetry/salesforce-opentelemetry-extension/${MONC_OTEL_EXT}/salesforce-opentelemetry-extension-${MONC_OTEL_EXT}.jar -o salesforce-opentelemetry-extension-${MONC_OTEL_EXT}.jar
+  ${REPOSITORY}/com/salesforce/monitoring/opentelemetry/salesforce-opentelemetry-extension/${MONC_OTEL_EXT_VERSION}/salesforce-opentelemetry-extension-${MONC_OTEL_EXT_VERSION}.jar -o salesforce-opentelemetry-extension-${MONC_OTEL_EXT_VERSION}.jar
 
 # Add a wrapper to be able to turn on/off FIPS with env var FIPS_ENABLED
 RUN mv /usr/bin/java /usr/bin/java.real
