@@ -204,6 +204,7 @@
       "matchPackagePatterns": [
         "^artifacts.msap.io/mulesoft/core-paas-base-image-node-18.*"
       ],
+      "matchUpdateTypes": ["replacement"],
       "replacementName": "artifacts.msap.io/mulesoft/supply-chain-node-18-base-image",
       "replacementVersion": "2.1.15",
       "description": "This Base Image needs to be migrated to RHEL9 based images to become fedRAMP compliant. ",
