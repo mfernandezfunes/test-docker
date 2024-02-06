@@ -159,7 +159,6 @@
         "{{#if isReplacement}}:warning::warning: PLEASE CHECK YOUR APP WILL NOT HAVE ANY ISSUE DUE TO THIS MIGRATION :warning: :warning:{{else}} {{/if}}"
       ],
       "addLabels": [
-        "{{#if isReplacement}}BASEIMAGE-RHEL{{/if}}",
         "{{#if isReplacement}}ATENTION{{/if}}"
       ],
       "prBodyDefinitions": {
