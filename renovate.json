@@ -174,7 +174,7 @@
         "docker"
       ],
       "matchPackagePatterns": [
-        "^artifacts.msap.io/mulesoft/core-paas-base-image-node-16*"
+        "^artifacts.msap.io/mulesoft/core-paas-base-image-node-16.*"
       ],
       "replacementName": "artifacts.msap.io/mulesoft/supply-chain-node-16-base-image",
       "replacementVersion": "2.1.15",
@@ -202,7 +202,7 @@
         "docker"
       ],
       "matchPackagePatterns": [
-        "^artifacts.msap.io/mulesoft/core-paas-base-image-node-18*"
+        "^artifacts.msap.io/mulesoft/core-paas-base-image-node-18.*"
       ],
       "replacementName": "artifacts.msap.io/mulesoft/supply-chain-node-18-base-image",
       "replacementVersion": "2.1.15",
@@ -230,7 +230,7 @@
         "docker"
       ],
       "matchPackagePatterns": [
-        "^artifacts.msap.io/mulesoft/core-paas-base-image-openjre-8*"
+        "^artifacts.msap.io/mulesoft/core-paas-base-image-openjre-8.*"
       ],
       "replacementName": "artifacts.msap.io/mulesoft/supply-chain-openjre-8-base-image",
       "replacementVersion": "2.1.15",
