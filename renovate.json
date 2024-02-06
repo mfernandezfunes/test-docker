@@ -33,7 +33,7 @@
         "{{#if isReplacement}}:warning::warning: PLEASE CHECK YOUR APP WILL NOT HAVE ANY ISSUE DUE TO THIS MIGRATION :warning: :warning:{{else}} {{/if}}"
       ],
       "addLabels": [
-        "{{#if isReplacement}}ATENTION{{/if}}"
+        "{{#if isReplacement}}BASEIMAGE-MIGRATION{{/if}}"
       ],
       "prBodyDefinitions": {
         "Change": "`core-paas-base-image-ubuntu:{{{displayFrom}}}` to `supply-chain-rhel-base-image:{{{displayTo}}}`"
@@ -69,7 +69,7 @@
         "{{#if isReplacement}}:warning::warning: PLEASE CHECK YOUR APP WILL NOT HAVE ANY ISSUE DUE TO THIS MIGRATION :warning: :warning:{{else}} {{/if}}"
       ],
       "addLabels": [
-        "{{#if isReplacement}}ATENTION{{/if}}"
+        "{{#if isReplacement}}BASEIMAGE-MIGRATION{{/if}}"
       ],
       "prBodyDefinitions": {
         "Change": "`core-paas-base-image-node-16:{{{displayFrom}}}` to `supply-chain-node-16-base-image:{{{displayTo}}}`"
@@ -108,7 +108,7 @@
         "{{#if isReplacement}}:warning::warning: PLEASE CHECK YOUR APP WILL NOT HAVE ANY ISSUE DUE TO THIS MIGRATION :warning: :warning:{{else}} {{/if}}"
       ],
       "addLabels": [
-        "{{#if isReplacement}}ATENTION{{/if}}"
+        "{{#if isReplacement}}BASEIMAGE-MIGRATION{{/if}}"
       ],
       "prBodyDefinitions": {
         "Change": "{{#if isReplacement}}`core-paas-base-image-node-18:{{{displayFrom}}}` to `supply-chain-node-18-base-image:{{{displayTo}}}` {{/if}}"
@@ -149,7 +149,7 @@
         "{{#if isReplacement}}:warning::warning: PLEASE CHECK YOUR APP WILL NOT HAVE ANY ISSUE DUE TO THIS MIGRATION :warning: :warning:{{else}} {{/if}}"
       ],
       "addLabels": [
-        "{{#if isReplacement}}ATENTION{{/if}}"
+        "{{#if isReplacement}}BASEIMAGE-MIGRATION{{/if}}"
       ],
       "prBodyDefinitions": {
         "Change": "`core-paas-base-image-openjre-8:{{{displayFrom}}}` to `supply-chain-openjre-8-base-image:{{{displayTo}}}`"
@@ -190,7 +190,7 @@
         "{{#if isReplacement}}:warning::warning: PLEASE CHECK YOUR APP WILL NOT HAVE ANY ISSUE DUE TO THIS MIGRATION :warning: :warning:{{else}} {{/if}}"
       ],
       "addLabels": [
-        "{{#if isReplacement}}ATENTION{{/if}}"
+        "{{#if isReplacement}}BASEIMAGE-MIGRATION{{/if}}"
       ],
       "prBodyDefinitions": {
         "Change": "`core-paas-base-image-openjre-11:{{{displayFrom}}}` to `supply-chain-openjre-11-base-image:{{{displayTo}}}`"
@@ -231,7 +231,7 @@
         "{{#if isReplacement}}:warning::warning: PLEASE CHECK YOUR APP WILL NOT HAVE ANY ISSUE DUE TO THIS MIGRATION :warning: :warning:{{else}} {{/if}}"
       ],
       "addLabels": [
-        "{{#if isReplacement}}ATENTION{{/if}}"
+        "{{#if isReplacement}}BASEIMAGE-MIGRATION{{/if}}"
       ],
       "prBodyDefinitions": {
         "Change": "`core-paas-base-image-openjre-17:{{{displayFrom}}}` to `supply-chain-openjre-17-base-image:{{{displayTo}}}`"
@@ -272,7 +272,7 @@
         "{{#if isReplacement}}:warning::warning: PLEASE CHECK YOUR APP WILL NOT HAVE ANY ISSUE DUE TO THIS MIGRATION :warning: :warning:{{else}} {{/if}}"
       ],
       "addLabels": [
-        "{{#if isReplacement}}ATENTION{{/if}}"
+        "{{#if isReplacement}}BASEIMAGE-MIGRATION{{/if}}"
       ],
       "prBodyDefinitions": {
         "Change": "`core-paas-base-image-openjre-8:{{{displayFrom}}}` to `supply-chain-openjdk-8-base-image:{{{displayTo}}}`"
@@ -313,7 +313,7 @@
         "{{#if isReplacement}}:warning::warning: PLEASE CHECK YOUR APP WILL NOT HAVE ANY ISSUE DUE TO THIS MIGRATION :warning: :warning:{{else}} {{/if}}"
       ],
       "addLabels": [
-        "{{#if isReplacement}}ATENTION{{/if}}"
+        "{{#if isReplacement}}BASEIMAGE-MIGRATION{{/if}}"
       ],
       "prBodyDefinitions": {
         "Change": "`core-paas-base-image-openjdk-11:{{{displayFrom}}}` to `supply-chain-openjdk-11-base-image:{{{displayTo}}}`"
@@ -354,7 +354,7 @@
         "{{#if isReplacement}}:warning::warning: PLEASE CHECK YOUR APP WILL NOT HAVE ANY ISSUE DUE TO THIS MIGRATION :warning: :warning:{{else}} {{/if}}"
       ],
       "addLabels": [
-        "{{#if isReplacement}}ATENTION{{/if}}"
+        "{{#if isReplacement}}BASEIMAGE-MIGRATION{{/if}}"
       ],
       "prBodyDefinitions": {
         "Change": "`core-paas-base-image-openjdk-17:{{{displayFrom}}}` to `supply-chain-openjdk-17-base-image:{{{displayTo}}}`"
