@@ -161,7 +161,7 @@
       ],
       "addLabels": [
         "{{#if isReplacement}}:warning: BASEIMAGE-RHEL{{/if}}",
-        "MIGRATION"
+        "{{#if isReplacement}}Replacement{{/if}}"
       ],
       "prBodyDefinitions": {
         "Migrate": "`core-paas-base-image-ubuntu:{{{displayFrom}}}` to `supply-chain-rhel-base-image:{{{displayTo}}}`"
