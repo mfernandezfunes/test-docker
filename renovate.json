@@ -235,6 +235,14 @@
       ],
       "replacementName": "artifacts.msap.io/mulesoft/supply-chain-openjdk-8-base-image",
       "replacementVersion": "2.1.12",
+    },
+    {
+      "matchDatasources": [
+        "docker"
+      ],
+      "matchPackagePatterns": [
+        "^artifacts.msap.io/mulesoft/core-paas-base-image-openjdk-8.*"
+      ],
       "matchUpdateTypes": [
         "replacement"
       ],
