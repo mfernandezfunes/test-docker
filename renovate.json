@@ -11,15 +11,7 @@
         "^artifacts.msap.io/mulesoft/core-paas-base-image-ubuntu.*"
       ],
       "replacementName": "artifacts.msap.io/mulesoft/supply-chain-rhel-base-image",
-      "replacementVersion": "2.1.12"
-    },
-    {
-      "matchDatasources": [
-        "docker"
-      ],
-      "matchPackagePatterns": [
-        "^artifacts.msap.io/mulesoft/core-paas-base-image-ubuntu.*"
-      ],
+      "replacementVersion": "2.1.12",
       "matchUpdateTypes": [
         "replacement"
       ],
@@ -50,7 +42,7 @@
         "^artifacts.msap.io/mulesoft/core-paas-base-image-node-16.*"
       ],
       "replacementName": "artifacts.msap.io/mulesoft/supply-chain-node-16-base-image",
-      "replacementVersion": "2.1.15"
+      "replacementVersion": "2.1.12"
     },
     {
       "matchDatasources": [
