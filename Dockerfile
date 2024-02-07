@@ -16,7 +16,7 @@
 #FROM artifacts.msap.io/mulesoft/core-paas-base-image-openjre-8:v5.2.142 as base
 #FROM artifacts.msap.io/mulesoft/core-paas-base-image-openjre-11:v5.2.142 as base
 #FROM artifacts.msap.io/mulesoft/core-paas-base-image-openjre-17:v5.2.142 as base
-FROM artifacts.msap.io/mulesoft/core-paas-base-image-openjdk-8:v5.2.142 as base
+FROM artifacts.msap.io/mulesoft/core-paas-base-image-openjdk-8:v5.2.142@sha256:d9a10d429db19083e8e9835f75c072bc0435070b31519ac6ac92d689b5787f84 as base
 #FROM artifacts.msap.io/mulesoft/core-paas-base-image-openjdk-11:v5.2.142 as base
 #FROM artifacts.msap.io/mulesoft/core-paas-base-image-openjdk-17:v5.2.142 as base
 
