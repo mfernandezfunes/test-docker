@@ -1,5 +1,48 @@
 {
   "extends": [
     "config:base"
+  ],
+  "packageRules": [
+    {
+      "matchDatasources": [
+        "docker"
+      ],
+      "matchPackagePatterns": [
+        "^artifacts.msap.io/mulesoft/core-paas-base-image-openjdk-8.*"
+      ],
+      "replacementName": "artifacts.msap.io/mulesoft/supply-chain-openjdk-8-base-image",
+      "replacementVersion": "2.1.12",
+      "pinDigests": true
+    },
+    {
+      "matchDatasources": [
+        "docker"
+      ],
+      "matchPackagePatterns": [
+        "^artifacts.msap.io/mulesoft/core-paas-base-image-openjdk-8.*"
+      ],
+      "matchUpdateTypes": [
+        "replacement"
+      ],
+      "pinDigests": true,
+      "description": "This Base Image needs to be migrated to RHEL9 based images to become fedRAMP compliant. ",
+      "commitMessagePrefix": "{{#if isReplacement}}:warning: Base Image REPLACEMENT! |{{else}} {{/if}}",
+      "commitMessageTopic": "{{#if isReplacement}}Migrate Ubuntu's based Base Image {{else}} dependency {{depName}}{{/if}}",
+      "commitMessageExtra": "{{#if isReplacement}}to Rhel's based Base Image {{{displayTo}}} :warning:{{else}} to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}{{/if}}",
+      "commitMessageSuffix": "",
+      "commitMessageAction": "{{#if isReplacement}} {{else}}Update{{/if}} ",
+      "prBodyNotes": [
+        "{{#if isReplacement}}:warning::warning: PLEASE CHECK YOUR APP WILL NOT HAVE ANY ISSUE DUE TO THIS MIGRATION :warning: :warning:{{else}} {{/if}}"
+      ],
+      "addLabels": [
+        "{{#if isReplacement}}BASEIMAGE-MIGRATION{{/if}}"
+      ],
+      "prBodyDefinitions": {
+        "Change": "`core-paas-base-image-openjre-8:{{{displayFrom}}}` to `supply-chain-openjdk-8-base-image:{{{displayTo}}}`"
+      },
+      "prBodyColumns": [
+        "Change"
+      ]
+    }
   ]
 }
