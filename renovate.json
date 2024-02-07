@@ -36,7 +36,7 @@
         "{{#if isReplacement}}BASEIMAGE-MIGRATION{{/if}}"
       ],
       "prBodyDefinitions": {
-        "Migrate": "`core-paas-base-image-openjre-8:{{{displayFrom}}}@{{{currentDigest}}}` to `supply-chain-openjdk-8-base-image:{{{displayTo}}}@{{{newDigest}}}`"
+        "Migrate": "`core-paas-base-image-openjre-8:{{{displayFrom}}}@{{{currentDigest}}}`\n to \n`supply-chain-openjdk-8-base-image:{{{displayTo}}}@{{{newDigest}}}`"
       },
       "prBodyColumns": [
         "Migrate"
