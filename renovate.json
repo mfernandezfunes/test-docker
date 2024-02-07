@@ -12,7 +12,7 @@
       ],
       "replacementName": "artifacts.msap.io/mulesoft/supply-chain-openjdk-8-base-image",
       "replacementVersion": "2.1.12",
-      "pinDigests": false
+      "pinDigests": true
     },
     {
       "matchDatasources": [
@@ -24,7 +24,6 @@
       "matchUpdateTypes": [
         "replacement"
       ],
-      "pinDigests": false,
       "description": "This Base Image needs to be migrated to RHEL9 based images to become fedRAMP compliant. ",
       "commitMessagePrefix": "{{#if isReplacement}}:warning: Base Image REPLACEMENT! |{{else}} {{/if}}",
       "commitMessageTopic": "{{#if isReplacement}}Migrate Ubuntu's based Base Image {{else}} dependency {{depName}}{{/if}}",
