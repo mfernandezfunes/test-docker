@@ -1,7 +1,7 @@
 # Taken from and modified to fit Ubuntu from older variant of
 # https://github.com/docker-library/openjdk/
 
-FROM artifacts.msap.io/mulesoft/core-paas-base-image-openjdk-8:v5.2.142@sha256:d9a10d429db19083e8e9835f75c072bc0435070b31519ac6ac92d689b5787f84 as base
+FROM artifacts.msap.io/mulesoft/supply-chain-openjdk-8-base-image:2.1.12@sha256:516abdaaab9f5b29ea9cf13389ab1dbfa72f98e2464b80b5f41fb7e7e4d46415 as base
 
 #FROM artifacts.msap.io/mulesoft/supply-chain-openjdk-8-base-image:2.1.11 as base
 #FROM artifacts.msap.io/mulesoft/supply-chain-rhel-base-image:2.1.11 as base
