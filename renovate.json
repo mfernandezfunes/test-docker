@@ -36,10 +36,10 @@
         "{{#if isReplacement}}BASEIMAGE-MIGRATION{{/if}}"
       ],
       "prBodyDefinitions": {
-        "Change": "`core-paas-base-image-openjre-8:{{{displayFrom}}}` to `supply-chain-openjdk-8-base-image:{{{displayTo}}}`"
+        "Migrate": "`core-paas-base-image-openjre-8:{{{displayFrom}}}` to `supply-chain-openjdk-8-base-image:{{{displayTo}}}`"
       },
       "prBodyColumns": [
-        "Change"
+        "Migrate"
       ]
     }
   ]
